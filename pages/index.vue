@@ -3,7 +3,7 @@
       <div class="message">
         <h2>Invest</h2> 
         <h3>in the whole world</h3>
-        <p>Open world lets you invest in the whole world from your phone. For free.</p>
+        <p>Open world lets you invest in the whole world from your phone.<br/> For free.</p>
         <a class="signup" href="https://amanmender1.typeform.com/to/KfjmuU">Sign up</a>
       </div>
       <img src="https://d2ue93q3u507c2.cloudfront.net/assets/marketing/images/home_redesign/iPhoneHome_still%402x.png" class="image" />
@@ -21,12 +21,14 @@ export default {
 </script>
 
 <style>
+* {
+  font-family: 'Oswald', sans-serif;
+}
 .splash {
   margin: auto;
-  text-align: center;
 }
 .splash > .message {
-    display: inline-block;
+  display: inline-block;
 }
 
 h2 {
@@ -57,7 +59,7 @@ img {
 
 a {
   padding: 10px;
-  background: darkgreen;
+  background: #21ce99; /* #13b713;*/
   color: white;
     display: inline-block;
     margin: 20px 0;
@@ -66,6 +68,9 @@ a {
 }
 
 @media screen and (max-width: 760px) {
+  .splash {
+    text-align: center;
+  }
   .splash > .message {
     padding: 20px;    
       /*text-align: left;*/
@@ -79,10 +84,14 @@ a {
   .splash {
     text-align: center;    
   }
+  .splash > .message {
+    text-align: left;
+  }
   img {
     width: 20%;
     display: inline-block;
-    top: 175px;
+    /*top: 175px;*/
+    top: 75px;
     position: relative;    
   }
 }
